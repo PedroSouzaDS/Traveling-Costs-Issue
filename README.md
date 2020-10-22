@@ -1,2 +1,2 @@
 # Traveling-Costs-Issue
-Data Science for a optimization costs of a Ouro Preto University employees (Professors ans Admnistratives) business traveling and possible solutions offerings.
+Data Science for a optimization costs of a Ouro Preto Federal University employees (Professors and Admnistratives) business traveling and possible solutions offerings.
