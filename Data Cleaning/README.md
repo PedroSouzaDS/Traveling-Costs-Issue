@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Traveling-Costs-Issue
-Data Science for a optimization costs of a Ouro Preto Federal University employees (Professors and Admnistratives) business traveling and possible solutions offerings.
-=======
 # 1ª Etapa: Limpeza dos Dados (Data Wrangling)
 
 A importação dos dados dos Datasets listados apresentaram uma série de problemas que atrapalhasse qualqeur extração de informações, logo, com a ajuda da biblioteca Pandas foi realizado uma série de transformações para que, mais tarde, seja realizado uma boa análise exploratória dos dados e, com técnicas de análise e Machine Leraning, sejam extraídas as melhores informações para os dados. Foi realizado nesta etapa:
@@ -26,4 +22,3 @@ Os três datasets "dados2017acd", "dados2017adm", "dados2018" e "dados2019", dev
 
 Dados limpos e organizados, preparados para passar para a 2ª etapa da análise exploratória ou extração de insights através do **MS Power B.I.** e sua linguagem **DAX**. A vantagem, para o Power B.I. de ter os dados preparados em python para depois ser trabalhado nele é que o arquivo fica bem mais leve em termos de memória (linguagem DAX ocupa muita memória)
 
->>>>>>> fd1d95a8fb00928c3e57d09f8a30a2892cc35e94
