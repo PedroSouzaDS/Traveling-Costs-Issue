@@ -1,6 +1,8 @@
-# 1ª Etapa: Limpeza dos Dados (Data Wrangling)
+# 1ª Etapa: Limpeza dos Dados (Data Cleaning)
 
 A importação dos dados dos Datasets listados apresentaram uma série de problemas que atrapalhasse qualqeur extração de informações, logo, com a ajuda da biblioteca Pandas foi realizado uma série de transformações para que, mais tarde, seja realizado uma boa análise exploratória dos dados e, com técnicas de análise e Machine Leraning, sejam extraídas as melhores informações para os dados. Foi realizado nesta etapa:
+
+![minion](https://github.com/PedroSouzaDS/Traveling-Costs-Issue/blob/main/Data%20Cleaning/minion.gif)
 
 1. Conferência dos tipos de dados presentes nas colunas e conversões (este último não foi necessário)
 
