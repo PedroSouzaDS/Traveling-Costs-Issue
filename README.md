@@ -6,7 +6,7 @@ A Universidade Federal de Ouro Preto-UFOP, localizada na cidade de Ouro Preto-MG
 
 No entanto, de acordo com o setor  de Compras da extinta fundação de apoio da Universidade, a FEOP, estes custos poderiam ser otimizados pois, segundo o setor, acontece um certo desperdício devido à falta de planejamento da viagem (compra de passagens na última hora) ou até mesmo a própria exigência do solicitante muitas vezes desnecessária e até mesmo abusiva. Tais custos com viagens e diárias nos últimos três anos (2017, 2018 e 2019) totalizaram, segundo os dados do problema, em R$2.270.704, 55.
 
-A Proposta do estudo é analisar dados destes custos, fazer uma análise exploratória e gerar insights a respeito destes custos, fazer análises preditivas para os gastos no futuro e os tipos de transportes utilizados, propor alternativas com custos mais baixos e propor melhorias no sistema de controle de gastos da PROPLAD, onde responderemos as seguintes perguntas ao longo do trabalho:
+A Proposta do estudo é analisar dados destes custos, fazer uma análise exploratória e gerar insights a respeito destes custos, fazer análises preditivas para os gastos no futuro e os tipos de transportes utilizados, propor alternativas com custos mais baixos e propor melhorias no sistema de controle de gastos da PROPLAD, onde respondemos as seguintes perguntas ao longo do trabalho:
 
 1.  Qual o gasto anual de 2017, 2018 e 2019 com passagens e diárias respectivamente? E a média de gasto total?
     
