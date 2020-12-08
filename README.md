@@ -24,16 +24,12 @@ A Proposta do estudo é analisar dados destes custos, fazer uma análise explora
     
 8.  Qual Órgão da UFOP lidera as solicitações de passagens e com quantas? E diárias? Deste Órgão qual o servidor com mais solicitações e gastos?
     
-9.  Quais atributos faltam neste conjunto de dados? Podemos incluí-los no dataset? Fazer uma pesquisa destes possíveis atributos e incluí-los no dataset, caso seja necessário faça uma previsão destes novos atributos com base nos dados dos atributos já existentes (ex: prever destinos e meios de transportes usados de acordo com o preço das passagens, tipos de hospedagens com o valor das diárias). (Modelos Preditivos: Regressões, Decision Trees, Cluster, etc)
+9.  Com base nas despesas destes anos e conhecendo, por meio da previsão anterior, os meios de transportes e hospedagens bem como seus respectivos aumentos a cada ano, fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022. (ARIMA, Time-Series, Média Móvel,etc)
     
-10.  Com base nas despesas destes anos e conhecendo, por meio da previsão anterior, os meios de transportes e hospedagens bem como seus respectivos aumentos a cada ano, fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022. (ARIMA, Time-Series, Média Móvel,etc)
+10.  Com base no item 8, qual a taxa de crescimento/decrescimento nos valores dessas despesas ao longo dos anos 2017, 2018, 2019, 2020, 2021, 2022?
     
-11.  Com base no item 8, qual a taxa de crescimento/decrescimento nos valores dessas despesas ao longo dos anos 2017, 2018, 2019, 2020, 2021, 2022?
+11.  Há alguma relação de Paretto entre as despesas e solicitantes? Caso haja, encaminhar à PROPLAD uma sugestão de abertura de sindicância para os solicitantes responsáveis pela parte majoritária de despesas. (Quais motivos de tanta viagem, qual o grau de importância para a instituição?)
     
-12.  Há alguma relação de Paretto entre as despesas e solicitantes? Caso haja, encaminhar à PROPLAD uma sugestão de abertura de sindicância para os solicitantes responsáveis pela parte majoritária de despesas. (Quais motivos de tanta viagem, qual o grau de importância para a instituição?)
+12.  Os dados presentes nas bases da PROPLAD são suficientes para estabelecer uma solução para otimizar estes custos. Quais dados seriam interessantes para a PROPLAD incluir e ter um maior controle sobre os custos com as viagens solicitadas.
     
-13.  Há alternativas de transportes e hospedagens mais viáveis para reduzir os custos nestas despesas? Quais são essas alternativas? Fazer um atributo com nome e preço dessas novas alternativas e uma previsão com esses novos possíveis gastos semelhante ao item 9.
-    
-14.  Os dados presentes nas bases da PROPLAD são suficientes para estabelecer uma solução para otimizar estes custos. Quais dados seriam interessantes para a PROPLAD incluir e ter um maior controle sobre os custos com as viagens solicitadas.
-    
-15.  Com a pandemia do novo Coronavírus, muitos eventos que demandam viagens a longa distância estão sendo realizados via vídeo conferências (webinares, congressos, simpósios, etc). Quanto de economia o setor pode ter adotando tais tecnologias daqui em diante, mesmo no pós pandemia?
+
