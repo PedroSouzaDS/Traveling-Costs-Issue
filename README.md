@@ -26,10 +26,8 @@ A Proposta do estudo é analisar dados destes custos, fazer uma análise explora
     
 9.  Com base nas despesas destes anos e conhecendo, por meio da previsão anterior, os meios de transportes e hospedagens bem como seus respectivos aumentos a cada ano, fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022. (ARIMA, Time-Series, Média Móvel,etc)
     
-10.  Com base no item 8, qual a taxa de crescimento/decrescimento nos valores dessas despesas ao longo dos anos 2017, 2018, 2019, 2020, 2021, 2022?
+10.  Há alguma relação de Paretto entre as despesas e solicitantes? Caso haja, encaminhar à PROPLAD uma sugestão de abertura de sindicância para os solicitantes responsáveis pela parte majoritária de despesas. (Quais motivos de tanta viagem, qual o grau de importância para a instituição?)
     
-11.  Há alguma relação de Paretto entre as despesas e solicitantes? Caso haja, encaminhar à PROPLAD uma sugestão de abertura de sindicância para os solicitantes responsáveis pela parte majoritária de despesas. (Quais motivos de tanta viagem, qual o grau de importância para a instituição?)
-    
-12.  Os dados presentes nas bases da PROPLAD são suficientes para estabelecer uma solução para otimizar estes custos. Quais dados seriam interessantes para a PROPLAD incluir e ter um maior controle sobre os custos com as viagens solicitadas.
+11.  Os dados presentes nas bases da PROPLAD são suficientes para estabelecer uma solução para otimizar estes custos. Quais dados seriam interessantes para a PROPLAD incluir e ter um maior controle sobre os custos com as viagens solicitadas.
     
 
