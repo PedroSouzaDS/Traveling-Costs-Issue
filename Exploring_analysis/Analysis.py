@@ -7,6 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.offline import iplot
 import chart_studio.plotly as cpy
+import statistics as stats
 
 import chart_studio
 chart_studio.tools.set_credentials_file(username='psouza.neto', api_key='Dwe3WEaa8deqj6bIgLMu')
@@ -29,7 +30,41 @@ while pos < len(df.Data_Solicitacao):
         df.Temporada[pos] = 'Alta'
     else: 
         df.Temporada[pos] = 'Baixa'
-    pos+=1       
+# Perguntas de negócio
+# 1 - Quais os gastos anuais de 2017, 2018, 2019 e Totais tanto com passagens qto com diarias?
+# 2017
+print('GASTOS EM 2017')
+print('Total gasto em DIÁRIAS em 2017: R$','%.2f' % (df.Vr_Diaria[df.Ano == '2017'].sum()))
+print('Total gasto em PASSAGENS em 2017: R$','%.2f' % (df.Vr_Passagem[df.Ano == '2017'].sum())) 
+print('Total gasto em VIAGENS (DIÁRIA + PASSAGEM) em 2017: R$','%.2f' % (df.Vr_Viagem[df.Ano == '2017'].sum())) 
+# 2018
+print('GASTOS EM 2018')
+print('Total gasto em DIÁRIAS em 2018: R$','%.2f' % (df.Vr_Diaria[df.Ano == '2018'].sum()))
+print('Total gasto em PASSAGENS em 2018: R$','%.2f' % (df.Vr_Passagem[df.Ano == '2018'].sum())) 
+print('Total gasto em VIAGENS (DIÁRIA + PASSAGEM) em 2018: R$','%.2f' % (df.Vr_Viagem[df.Ano == '2018'].sum())) 
+# 2019
+print('GASTOS EM 2019')
+print('Total gasto em DIÁRIAS em 2019: R$','%.2f' % (df.Vr_Diaria[df.Ano == '2019'].sum()))
+print('Total gasto em PASSAGENS em 2019: R$','%.2f' % (df.Vr_Passagem[df.Ano == '2019'].sum())) 
+print('Total gasto em VIAGENS (DIÁRIA + PASSAGEM) em 2019: R$','%.2f' % (df.Vr_Viagem[df.Ano == '2019'].sum()))
+# Total 3 anos
+print('GASTOS TOTAIS DOS 3 ANOS')
+print('Total gasto DIÁRIA: R$','%.2f' % (df.Vr_Diaria.sum())) 
+print('Total gasto PASSAGESNS: R$','%.2f' % (df.Vr_Passagem.sum()))
+print('Total gasto VIAGENS (DIÁRIA + PASSAGEM): R$','%.2f' % (df.Vr_Viagem.sum()))
+# 2.  Quais as medidas de tendência central destas duas despesas (média, mediana, moda)? 
+# Como comporta as relações entre elas? Registre as interpretações.   
+# 3.  Qual a variância entre estes valores? Analisar por meio de um boxplot.    
+# 4.  Há outliers entre os dados de ambas as despesas? Fazer uma análise de Outliers.
+# 5.  Há algum tipo de correlação entre os dados?   
+# 6.  Qual departamento lidera as solicitações de viagens? 
+# Deste departamento qual o professor com mais solicitações e gastos?    
+# 7.  Qual Órgão da UFOP lidera as solicitações de viagens? 
+# Deste Órgão qual o servidor com mais solicitações e gastos?    
+# 8.  Com base nas despesas destes anos e conhecendo, por meio da previsão anterior, 
+# os meios de transportes e hospedagens bem como seus respectivos aumentos a cada ano, 
+# fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022.    
+# 9.  Há alguma relação de Pareto entre as despesas e solicitantes? 
 # Inclui coluna alta/baixa temporada binário (correlation)
 df['Temporada_bin']=LabelBinarizer().fit_transform(df.Temporada)
 # Analise de Correlacoes
@@ -43,22 +78,22 @@ df_fig.columns = ['Orgao_Solicitante','Nome_viajante','Data_Solicitacao','Data_I
 
 df_fig = df_fig[df_fig.Valor != 0]
 
-boxplot = px.box(df_fig, x='Despesa', y='Valor', title='Gastos Totais')
+boxplot = px.box(df_fig, y='Valor', title='Gastos Totais', color='Despesa' )
 boxplot.update_traces(quartilemethod = 'exclusive')
 cpy.iplot(boxplot)
 
-boxplot17 = px.box(df_fig, x=df_fig.Despesa[df_fig.Ano == '2017'], 
-                   y=df_fig.Valor[df_fig.Ano == '2017'], title = 'Gastos 2017')
+boxplot17 = px.box(df_fig, y=df_fig.Valor[df_fig.Ano == '2017'], title = 'Gastos 2017',
+                   color=df_fig.Despesa[df_fig.Ano == '2017'])
 boxplot17.update_traces(quartilemethod = 'exclusive')
 cpy.iplot(boxplot17)
 
-boxplot18 = px.box(df_fig, x=df_fig.Despesa[df_fig.Ano == '2018'], 
-                   y=df_fig.Valor[df_fig.Ano == '2018'], title = 'Gastos 2018')
+boxplot18 = px.box(df_fig, y=df_fig.Valor[df_fig.Ano == '2018'], title = 'Gastos 2018',
+                   color=df_fig.Despesa[df_fig.Ano == '2018'])
 boxplot18.update_traces(quartilemethod = 'exclusive')
 cpy.iplot(boxplot18)
 
-boxplot19 = px.box(df_fig, x=df_fig.Despesa[df_fig.Ano == '2019'], 
-                   y=df_fig.Valor[df_fig.Ano == '2019'], title = 'Gastos 2019')
+boxplot19 = px.box(df_fig, y=df_fig.Valor[df_fig.Ano == '2019'], title = 'Gastos 2019',
+                   color=df_fig.Despesa[df_fig.Ano == '2019'])
 boxplot19.update_traces(quartilemethod = 'exclusive')
 cpy.iplot(boxplot19)
 
