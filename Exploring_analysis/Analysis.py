@@ -70,7 +70,8 @@ cpy.iplot(snb)
 snbYear = px.sunburst(df, path = ['Ano', 'Orgao_Solicitante', 'Nome_viajante'], values = 'Vr_Viagem')
 snbYear.update_traces(textinfo = 'label+percent entry')
 cpy.iplot(snbYear)
-# Pareto
 
-# usar go com barra e linhas 
-# Previsão demanda ARIMA, média móvel
+# Um Dashboard apenas com Analise de boxplot
+# Outro Dashboard com Sumburst, ARIMA, Linhas
+# Fazer no Matplotlib e colocar só no relatório o Pareto
+ 
