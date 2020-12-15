@@ -7,7 +7,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.offline import iplot
 import chart_studio.plotly as cpy
-import statistics as stats
 
 import chart_studio
 chart_studio.tools.set_credentials_file(username='psouza.neto', api_key='Dwe3WEaa8deqj6bIgLMu')
@@ -30,6 +29,14 @@ while pos < len(df.Data_Solicitacao):
         df.Temporada[pos] = 'Alta'
     else: 
         df.Temporada[pos] = 'Baixa'
+    pos+=1
+df['Temporada_bin']=LabelBinarizer().fit_transform(df.Temporada)
+df_fig = df.melt(id_vars = ['Orgao_Solicitante','Nome_viajante','Data_Solicitacao','Data_Inicio','Ano','Intervalo',
+                            'Temporada','Temporada_bin'], value_vars=['Vr_Diaria', 'Vr_Passagem', 'Vr_Viagem'])
+df_fig.columns = ['Orgao_Solicitante','Nome_viajante','Data_Solicitacao','Data_Inicio','Ano',
+                  'Intervalo','Temporada','Temporada_bin','Despesa','Valor']
+df_fig = df_fig[df_fig.Valor != 0]
+
 # Perguntas de negócio
 # 1 - Quais os gastos anuais de 2017, 2018, 2019 e Totais tanto com passagens qto com diarias?
 # 2017
@@ -52,32 +59,12 @@ print('GASTOS TOTAIS DOS 3 ANOS')
 print('Total gasto DIÁRIA: R$','%.2f' % (df.Vr_Diaria.sum())) 
 print('Total gasto PASSAGESNS: R$','%.2f' % (df.Vr_Passagem.sum()))
 print('Total gasto VIAGENS (DIÁRIA + PASSAGEM): R$','%.2f' % (df.Vr_Viagem.sum()))
-# 2.  Quais as medidas de tendência central destas duas despesas (média, mediana, moda)? 
-# Como comporta as relações entre elas? Registre as interpretações.   
-# 3.  Qual a variância entre estes valores? Analisar por meio de um boxplot.    
-# 4.  Há outliers entre os dados de ambas as despesas? Fazer uma análise de Outliers.
-# 5.  Há algum tipo de correlação entre os dados?   
-# 6.  Qual departamento lidera as solicitações de viagens? 
-# Deste departamento qual o professor com mais solicitações e gastos?    
-# 7.  Qual Órgão da UFOP lidera as solicitações de viagens? 
-# Deste Órgão qual o servidor com mais solicitações e gastos?    
-# 8.  Com base nas despesas destes anos e conhecendo, por meio da previsão anterior, 
-# os meios de transportes e hospedagens bem como seus respectivos aumentos a cada ano, 
-# fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022.    
-# 9.  Há alguma relação de Pareto entre as despesas e solicitantes? 
-# Inclui coluna alta/baixa temporada binário (correlation)
-df['Temporada_bin']=LabelBinarizer().fit_transform(df.Temporada)
-# Analise de Correlacoes
-df.corr()
-sns.pairplot(df)
-# Analise de medidas de tendencia central e boxplot, boxplot sem valores "zero"
-df_fig = df.melt(id_vars = ['Orgao_Solicitante','Nome_viajante','Data_Solicitacao','Data_Inicio','Ano','Intervalo',
-                            'Temporada','Temporada_bin'])
-df_fig.columns = ['Orgao_Solicitante','Nome_viajante','Data_Solicitacao','Data_Inicio','Ano',
-                  'Intervalo','Temporada','Temporada_bin','Despesa','Valor']
-
-df_fig = df_fig[df_fig.Valor != 0]
-
+# 2Faca uma nálise de boxplot?
+# a)  Qual o comportamento dos gráficos em relação a assimetria suas assimetrias?
+# b)  Qual o Desvio Padrão entre estes valores?   
+# c)  Há outliers entre os dados de ambas as despesas? Fazer uma análise de Outliers.
+# d)  Quais informações os boxplot podem agregar na solução do problema do negócio? Quais mudanças
+# podem ser sugeridas por conta desta visualização?
 boxplot = px.box(df_fig, y='Valor', title='Gastos Totais', color='Despesa' )
 boxplot.update_traces(quartilemethod = 'exclusive')
 cpy.iplot(boxplot)
@@ -96,17 +83,22 @@ boxplot19 = px.box(df_fig, y=df_fig.Valor[df_fig.Ano == '2019'], title = 'Gastos
                    color=df_fig.Despesa[df_fig.Ano == '2019'])
 boxplot19.update_traces(quartilemethod = 'exclusive')
 cpy.iplot(boxplot19)
-
-# Pizza (sumburst: hierarquico)
+# 3.  Há algum tipo de correlação entre os dados?  
+df.corr()
+sns.pairplot(df) 
+# 4.  Qual departamento lidera as solicitações de viagens? 
+# Deste departamento qual o professor com mais solicitações e gastos? 
 snb = px.sunburst(df, path = ['Orgao_Solicitante', 'Nome_viajante'], values = 'Vr_Viagem')
 snb.update_traces(textinfo = 'label+percent entry')
 cpy.iplot(snb)
 
 snbYear = px.sunburst(df, path = ['Ano', 'Orgao_Solicitante', 'Nome_viajante'], values = 'Vr_Viagem')
 snbYear.update_traces(textinfo = 'label+percent entry')
-cpy.iplot(snbYear)
-
-# Um Dashboard apenas com Analise de boxplot
-# Outro Dashboard com Sumburst, ARIMA, Linhas
+cpy.iplot(snbYear)   
+# 5.  Qual Órgão da UFOP lidera as solicitações de viagens? 
+# Deste Órgão qual o servidor com mais solicitações e gastos?    
+# 6.  Com base nas despesas destes anos fazer uma previsão 
+# destes gastos para o ano de para os próximos anos 2020, 2021 e 2022 com ARIMA.    
+# 7.  Há alguma relação de Pareto entre as despesas e solicitantes? 
 # Fazer no Matplotlib e colocar só no relatório o Pareto
  
