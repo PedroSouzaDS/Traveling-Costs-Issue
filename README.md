@@ -8,22 +8,22 @@ No entanto, de acordo com o setor  de Compras da extinta fundação de apoio da 
 
 A Proposta do estudo é analisar dados destes custos e gerar insights a respeito, fazer análises preditivas para os gastos no futuro com o intuito de oferecer um suporte ao tomador de decisões do órgão competente tanto para que possa buscar alternativas mais viáveis economicamente quanto propor melhorias dentro do próprio órgão.
 
-1.  Qual o gasto anual de 2017, 2018 e 2019 com passagens e diárias respectivamente? E a média de gasto total?
+1.  Qual o gasto anual de 2017, 2018 e 2019 com passagens e diárias respectivamente?
     
-2.  Quais as medidas de tendência central destas duas despesas (média, mediana, moda)? Como comporta as relações entre elas? Registre as interpretações.
-    
-3.  Qual a variância entre estes valores? Analisar por meio de um boxplot.
-    
-4.  Há outliers entre os dados de ambas as despesas? Fazer uma análise de Outliers.
+2.  Faça uma análise de Boxplot?
+    a) Qual o comportamento dos gráficos em relação a assimetria suas assimetrias?
+    b) Qual o Desvio Padrão entre estes valores?
+    c) Há outliers entre os dados de ambas as despesas? Fazer uma análise de Outliers.
+    d) Quais informações os boxplot podem agregar na solução do problema do negócio? Quais mudanças podem ser sugeridas por conta desta visualização?
 
-5.  Há algum tipo de correlação entre os dados?
+3.  Há algum tipo de correlação entre os dados?
     
-6.  Qual departamento lidera as solicitações de viagens? Deste departamento qual o professor com mais solicitações e gastos?
+4.  Qual departamento lidera as solicitações de viagens? Deste departamento qual o professor com mais solicitações e gastos?
     
-7.  Qual Órgão da UFOP lidera as solicitações de viagens? Deste Órgão qual o servidor com mais solicitações e gastos?
+5.  Qual Órgão da UFOP lidera as solicitações de viagens? Deste Órgão qual o servidor com mais solicitações e gastos?
     
-8.  Com base nas despesas destes anos e conhecendo, por meio da previsão anterior, os meios de transportes e hospedagens bem como seus respectivos aumentos a cada ano, fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022.
+6.  Com base nas despesas destes anos fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022 com ARIMA. 
     
-9.  Há alguma relação de Pareto entre as despesas e solicitantes? 
+7.  Há alguma relação de Pareto entre as despesas e solicitantes? 
     
-10.  Quais conclusões podemos extrair de todos estes Insights? Há alguma sugestão de melhoria que pode ser dada ao gestor da Pró-Reitoria de Planejamento da UFOP? Fazer um breve resumo do negócio com base nas informações extraídas dos dados. 
+8.  Quais conclusões podemos extrair de todos estes Insights? Há alguma sugestão de melhoria que pode ser dada ao gestor da Pró-Reitoria de Planejamento da UFOP? Fazer um breve resumo do negócio com base nas informações extraídas dos dados. 
