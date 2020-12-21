@@ -4,9 +4,9 @@ import numpy as np
 import seaborn as sns
 from sklearn.preprocessing import LabelBinarizer
 import plotly.express as px
-import plotly.graph_objects as go
-from plotly.offline import iplot
 import chart_studio.plotly as cpy
+from datetime import datetime
+import matplotlib.pyplot as plt
 
 import chart_studio
 chart_studio.tools.set_credentials_file(username='psouza.neto', api_key='Dwe3WEaa8deqj6bIgLMu')
@@ -98,7 +98,14 @@ cpy.iplot(snbYear)
 # 5.  Qual Órgão da UFOP lidera as solicitações de viagens? 
 # Deste Órgão qual o servidor com mais solicitações e gastos?    
 # 6.  Com base nas despesas destes anos fazer uma previsão 
-# destes gastos para o ano de para os próximos anos 2020, 2021 e 2022 com ARIMA.    
+# destes gastos para o ano de para os próximos anos 2020, 2021 e 2022 com ARIMA. 
+# Separa dados Times Series
+data = df.Data_Solicitacao # Já se encontra em "datetime"
+valor = df.Vr_Viagem
+ts = pd.concat([data, valor], axis = 1)
+ts.set_index('Data_Solicitacao', inplace = True)
+ts.info()
+
 # 7.  Há alguma relação de Pareto entre as despesas e solicitantes? 
 # Fazer no Matplotlib e colocar só no relatório o Pareto
  
