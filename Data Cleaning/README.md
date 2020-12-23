@@ -22,5 +22,5 @@ Os três datasets "dados2017acd", "dados2017adm", "dados2018" e "dados2019", dev
 
 # Pronto! 
 
-Dados limpos e organizados, preparados para passar para a 2ª etapa da análise exploratória ou extração de insights através do **MS Power B.I.** e sua linguagem **DAX**. A vantagem, para o Power B.I. de ter os dados preparados em python para depois ser trabalhado nele é que o arquivo fica bem mais leve em termos de memória (linguagem DAX ocupa muita memória)
+Dados limpos e organizados, preparados para passar para a 2ª etapa da análise exploratória ou extração de insights através do **MS Power B.I.** e sua linguagem **DAX**. Os dados preparados em Python antes de serem importados em programas como MS Power B.I. oferecem uma grande vantagem por fornecer arquivos ".pbix" menos pesados. 
 
