@@ -8,6 +8,10 @@ No entanto, de acordo com o setor  de Compras da extinta fundação de apoio da 
 
 A Proposta do estudo é analisar dados destes custos e gerar insights a respeito, fazer análises preditivas para os gastos no futuro com o intuito de oferecer um suporte ao tomador de decisões do órgão competente tanto para que possa buscar alternativas mais viáveis economicamente quanto propor melhorias dentro do próprio órgão.
 
+ESTE PROBLEMA FOI SOLUCIONADO EM DUAS ETAPAS:
+1 - LIMPEZA DOS DADOS NA PASTA "Data Cleaning", ONDE É APRESENTADO DETALHES DE TODA A ETAPA DE PRÉ-PROCESSAMENTO COMO AS TRANSFORMAÇÃO E PREPARAÇÕES DOS DADOS.
+2 - ANÁLISE EXPLORATÓRIA ONDE FORAM GERADOS OS INSIGHTS NA PASTA "Exploring_analysis", ONDE SÃO EXPLORADAS E APRESENTADAS AS SOLUÇÕES DO NEGÓCIO POR MEIO DE INSIGHTS E ONDE AS SEGUINTES PERGUNTAS A RESPEITO DO PROBLEMA DE NEGÓCIO SÃO RESPONDIDAS POR MEIO DE UM RELATÓRIO.
+
 1.  Qual o gasto anual de 2017, 2018 e 2019 com passagens e diárias respectivamente?
     
 2.  Faça uma análise de Boxplot?
