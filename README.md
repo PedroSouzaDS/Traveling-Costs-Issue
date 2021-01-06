@@ -10,29 +10,40 @@ A Proposta do estudo é analisar dados destes custos e gerar insights a respeito
 
 ESTE PROBLEMA FOI SOLUCIONADO EM DUAS ETAPAS:
 
-I - LIMPEZA DOS DADOS NA PASTA "Data Cleaning", ONDE É APRESENTADO DETALHES DE TODA A ETAPA DE PRÉ-PROCESSAMENTO COMO AS TRANSFORMAÇÃO E PREPARAÇÕES DOS DADOS.
+I - LIMPEZA DOS DADOS NA PASTA "Data Cleaning", ONDE É APRESENTADO DETALHES DE TODA A ETAPA DE PRÉ-PROCESSAMENTO COMO AS TRANSFORMAÇÃO E PREPARAÇÕES DOS DADOS. O PASSO A PASSO DA RESOLUÇÃO DESTA PARTE PODE SER CONSULTADA NO PRÓPRIO ARQUIVO JUPYTER NOTEBOOK: 
+https://github.com/PedroSouzaDS/Traveling-Costs-Issue/blob/main/Data%20Cleaning/Data_Cleaning.ipynb
 
-II - ANÁLISE EXPLORATÓRIA ONDE FORAM GERADOS OS INSIGHTS NA PASTA "Exploring_analysis", ONDE SÃO EXPLORADAS E APRESENTADAS AS SOLUÇÕES DO NEGÓCIO POR MEIO DE INSIGHTS E ONDE AS SEGUINTES PERGUNTAS A RESPEITO DO PROBLEMA DE NEGÓCIO SÃO RESPONDIDAS POR MEIO DE UM RELATÓRIO.
+II - AS SEGUINTES PERGUNTAS RELACIONADAS AOS PROBLEMAS DO NEGÓCIO SERÃO RESPONDIDAS AO LONGO DA ANÁLISE EXPLORATÓRIA TAMBÉM NO PRÓPRIO ARQUIVO JUPYTER NOTEBOOK:
+https://github.com/PedroSouzaDS/Traveling-Costs-Issue/blob/main/Exploring_analysis/An%C3%A1lise_exploratoria.ipynb
 
 
 PRINCIPAIS PROBLEMAS:
-1.  Qual o gasto anual de 2017, 2018 e 2019 com passagens e diárias respectivamente?
-    
-2.  Faça uma análise de Boxplot?
+1.  Sobre os gastos:
 
-    a) Qual o comportamento dos gráficos em relação a assimetria suas assimetrias?
-    b) Qual o Desvio Padrão entre estes valores?
-    c) Há outliers entre os dados de ambas as despesas? Fazer uma análise de Outliers.
-    d) Quais informações os boxplot podem agregar na solução do problema do negócio? Quais mudanças podem ser sugeridas por conta desta visualização?
+a) Qual órgão demandou o maior gasto em 2017? Qual o solicitante desse órgão foi o maior responsável pelo gasto?
 
-3.  Há algum tipo de correlação entre os dados?
+b) E em 2018?
+
+c) E em 2019?
+
+2.  Qual o tipo mais solicitado, diárias ou passagens? Qual dos dois demandou os maiores gastos e quanto?
+
+3.  Fazer uma análise de boxplot para cada ano e para o total de solicitações:
+
+a) Analisar e fazer uma comparação dos outliers de cada ano e discorrer sobre.
+
+b) Analisar os limites inferiores e superiores discorrer sobre.
+
+c) Analisar as assimetrias discorrer sobre.
+
+d) Comparar o comportamento destes parâmetros dos anos individuais com os parâmetros do gráfico do total (Valor Viagem) discorrer sobre. 
     
-4.  Qual departamento lidera as solicitações de viagens? Deste departamento qual o professor com mais solicitações e gastos?
+4.  Qual o desvio padrão para cada ano? Comparar os desvios padrão de cada entre si e entre o total.
     
-5.  Qual Órgão da UFOP lidera as solicitações de viagens? Deste Órgão qual o servidor com mais solicitações e gastos?
+5.  Há correlação entre os dados? Quais são as correlações?
     
-6.  Com base nas despesas destes anos fazer uma previsão destes gastos para o ano de para os próximos anos 2020, 2021 e 2022 com ARIMA. 
+6.  Fazer uma análise de Time Series. 
     
-7.  Há alguma relação de Pareto entre as despesas e solicitantes? 
-    
-8.  Quais conclusões podemos extrair de todos estes Insights? Há alguma sugestão de melhoria que pode ser dada ao gestor da Pró-Reitoria de Planejamento da UFOP? Fazer um breve resumo do negócio com base nas informações extraídas dos dados. 
+7.  Fazer uma previsão de futuras demandas usando ARIMA, para 2020, 2021, 2022 e 2023? 
+
+8. Há relação de Pareto entre os dados? Fazer um gráfico de Pareto e analisar.
