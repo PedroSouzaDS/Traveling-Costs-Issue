@@ -13,38 +13,38 @@ ESTE PROBLEMA FOI SOLUCIONADO EM DUAS ETAPAS:
 I - LIMPEZA DOS DADOS NA PASTA "Data Cleaning", ONDE É APRESENTADO DETALHES DE TODA A ETAPA DE PRÉ-PROCESSAMENTO COMO AS TRANSFORMAÇÃO E PREPARAÇÕES DOS DADOS. O PASSO A PASSO DA RESOLUÇÃO DESTA PARTE PODE SER CONSULTADA NO PRÓPRIO ARQUIVO JUPYTER NOTEBOOK: 
 https://github.com/PedroSouzaDS/Traveling-Costs-Issue/blob/main/Data%20Cleaning/Data_Cleaning.ipynb
 
-II - AS SEGUINTES PERGUNTAS RELACIONADAS AOS PROBLEMAS DO NEGÓCIO SERÃO RESPONDIDAS AO LONGO DA ANÁLISE EXPLORATÓRIA TAMBÉM NO PRÓPRIO ARQUIVO JUPYTER NOTEBOOK:
+II - AS SEGUINTES PERGUNTAS RELACIONADAS AOS PROBLEMAS DO NEGÓCIO SERÃO RESPONDIDAS COM UM RELATÓRIO DE INSIGHTS AO LONGO DA ANÁLISE EXPLORATÓRIA TAMBÉM NO PRÓPRIO ARQUIVO JUPYTER NOTEBOOK:
 https://github.com/PedroSouzaDS/Traveling-Costs-Issue/blob/main/Exploring_analysis/An%C3%A1lise_exploratoria.ipynb
 
 
 PRINCIPAIS PROBLEMAS:
 
-## 1.  Sobre os gastos:
+### 1.  Sobre os gastos:
 
-### a) Qual órgão demandou o maior gasto em 2017? Qual o solicitante desse órgão foi o maior responsável pelo gasto?
+#### a) Qual órgão demandou o maior gasto em 2017? Qual o solicitante desse órgão foi o maior responsável pelo gasto?
 
-### b) E em 2018?
+#### b) E em 2018?
 
-### c) E em 2019?
+#### c) E em 2019?
 
-## 2.  Qual o tipo mais solicitado, diárias ou passagens? Qual dos dois demandou os maiores gastos e quanto?
+### 2.  Qual o tipo mais solicitado, diárias ou passagens? Qual dos dois demandou os maiores gastos e quanto?
 
-## 3.  Fazer uma análise de boxplot para cada ano e para o total de solicitações:
+### 3.  Fazer uma análise de boxplot para cada ano e para o total de solicitações:
 
-### a) Analisar e fazer uma comparação dos outliers de cada ano e discorrer sobre.
+#### a) Analisar e fazer uma comparação dos outliers de cada ano e discorrer sobre.
 
-### b) Analisar os limites inferiores e superiores discorrer sobre.
+#### b) Analisar os limites inferiores e superiores discorrer sobre.
 
-### c) Analisar as assimetrias discorrer sobre.
+#### c) Analisar as assimetrias discorrer sobre.
 
-### d) Comparar o comportamento destes parâmetros dos anos individuais com os parâmetros do gráfico do total (Valor Viagem) discorrer sobre. 
+#### d) Comparar o comportamento destes parâmetros dos anos individuais com os parâmetros do gráfico do total (Valor Viagem) discorrer sobre. 
     
-## 4.  Qual o desvio padrão para cada ano? Comparar os desvios padrão de cada entre si e entre o total.
+### 4.  Qual o desvio padrão para cada ano? Comparar os desvios padrão de cada entre si e entre o total.
     
-## 5.  Há correlação entre os dados? Quais são as correlações?
+### 5.  Há correlação entre os dados? Quais são as correlações?
     
-## 6.  Fazer uma análise de Time Series. 
+### 6.  Fazer uma análise de Time Series. 
     
-## 7.  Fazer uma previsão de futuras demandas usando ARIMA, para 2020, 2021, 2022 e 2023? 
+### 7.  Fazer uma previsão de futuras demandas usando ARIMA, para 2020, 2021, 2022 e 2023? 
 
-## 8. Há relação de Pareto entre os dados? Fazer um gráfico de Pareto e analisar.
+### 8. Há relação de Pareto entre os dados? Fazer um gráfico de Pareto e analisar.
