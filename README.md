@@ -18,32 +18,33 @@ https://github.com/PedroSouzaDS/Traveling-Costs-Issue/blob/main/Exploring_analys
 
 
 PRINCIPAIS PROBLEMAS:
-1.  Sobre os gastos:
 
-a) Qual órgão demandou o maior gasto em 2017? Qual o solicitante desse órgão foi o maior responsável pelo gasto?
+## 1.  Sobre os gastos:
 
-b) E em 2018?
+### a) Qual órgão demandou o maior gasto em 2017? Qual o solicitante desse órgão foi o maior responsável pelo gasto?
 
-c) E em 2019?
+### b) E em 2018?
 
-2.  Qual o tipo mais solicitado, diárias ou passagens? Qual dos dois demandou os maiores gastos e quanto?
+### c) E em 2019?
 
-3.  Fazer uma análise de boxplot para cada ano e para o total de solicitações:
+## 2.  Qual o tipo mais solicitado, diárias ou passagens? Qual dos dois demandou os maiores gastos e quanto?
 
-a) Analisar e fazer uma comparação dos outliers de cada ano e discorrer sobre.
+## 3.  Fazer uma análise de boxplot para cada ano e para o total de solicitações:
 
-b) Analisar os limites inferiores e superiores discorrer sobre.
+### a) Analisar e fazer uma comparação dos outliers de cada ano e discorrer sobre.
 
-c) Analisar as assimetrias discorrer sobre.
+### b) Analisar os limites inferiores e superiores discorrer sobre.
 
-d) Comparar o comportamento destes parâmetros dos anos individuais com os parâmetros do gráfico do total (Valor Viagem) discorrer sobre. 
+### c) Analisar as assimetrias discorrer sobre.
+
+### d) Comparar o comportamento destes parâmetros dos anos individuais com os parâmetros do gráfico do total (Valor Viagem) discorrer sobre. 
     
-4.  Qual o desvio padrão para cada ano? Comparar os desvios padrão de cada entre si e entre o total.
+## 4.  Qual o desvio padrão para cada ano? Comparar os desvios padrão de cada entre si e entre o total.
     
-5.  Há correlação entre os dados? Quais são as correlações?
+## 5.  Há correlação entre os dados? Quais são as correlações?
     
-6.  Fazer uma análise de Time Series. 
+## 6.  Fazer uma análise de Time Series. 
     
-7.  Fazer uma previsão de futuras demandas usando ARIMA, para 2020, 2021, 2022 e 2023? 
+## 7.  Fazer uma previsão de futuras demandas usando ARIMA, para 2020, 2021, 2022 e 2023? 
 
-8. Há relação de Pareto entre os dados? Fazer um gráfico de Pareto e analisar.
+## 8. Há relação de Pareto entre os dados? Fazer um gráfico de Pareto e analisar.
