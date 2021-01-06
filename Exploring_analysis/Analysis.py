@@ -100,12 +100,11 @@ cpy.iplot(snbYear)
 # 6.  Com base nas despesas destes anos fazer uma previsão 
 # destes gastos para o ano de para os próximos anos 2020, 2021 e 2022 com ARIMA. 
 # Separa dados Times Series
-data = df.Data_Solicitacao # Já se encontra em "datetime"
-valor = df.Vr_Viagem
-ts = pd.concat([data, valor], axis = 1)
-ts.set_index('Data_Solicitacao', inplace = True)
-ts.info()
-
+ts = pd.concat([df.Data_Solicitacao, df.Vr_Viagem], axis = 1)
+ts.set_index('Data_Solicitacao', inplace=(True))
+ts = ts.sort_index()
+ts.plot(figsize = (15,6))
+len(ts[ts.Vr_Viagem == 0])
 # 7.  Há alguma relação de Pareto entre as despesas e solicitantes? 
 # Fazer no Matplotlib e colocar só no relatório o Pareto
  
